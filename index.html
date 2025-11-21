@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>eLearn — Learn anything, anywhere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ======= PRELOADER ======= -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="spinner"></div>
+      <p>Loading E-Learning...</p>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">eLearn</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="#">Login</a>
+        <a class="btn btn-primary" href="#">Sign up</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Learn new skills — build your future</h1>
+          <p>A demo Project Created By Our SVU Group</p>
+          <p>Interactive lessons, real projects, expert instructors. Start learning today!</p>
+
+          <form id="searchForm" class="search-form" onsubmit="return false;">
+            <input id="searchInput" type="search" placeholder="Search courses..." />
+            <button class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COURSES SECTION ===== -->
+    <section id="courses" class="container courses-section">
+      <header class="section-header">
+        <h2>All Courses</h2>
+      </header>
+
+      <div class="courses-scroll">
+        <ul id="courseList" class="courses-grid">
+          <li class="course-card">
+            <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\ract.jpg" alt="React Course" class="course-image">
+
+            <h3 class="course-title">React for Beginners</h3>
+            <p class="course-meta">Jane Doe • 6 hours • 24 lessons</p>
+            <p class="course-desc">Learn the basics of React, components, hooks, and routing.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+            <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\python.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">Python for Data Science</h3>
+            <p class="course-meta">Dr. Samir Patel • 12 hours • 48 lessons</p>
+            <p class="course-desc">Master data analysis and machine learning with Python.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+            <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\java.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">Core Java</h3>
+            <p class="course-meta">Abhik Gorai</p>
+            <p class="course-desc">Build robust applications in Java with AI help for code review, optimization, and debugging.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+            <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\c.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">C</h3>
+            <p class="course-meta">Abhishake Chel</p>
+            <p class="course-desc">Build a strong programming foundation by learning C.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+             <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\c++.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">C++</h3>
+            <p class="course-meta">Abhishake Laha</p>
+            <p class="course-desc">Build a strong programming foundation by learning C++.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+             <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\html.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">HTML</h3>
+            <p class="course-meta">Anuska Khan</p>
+            <p class="course-desc">Build a strong programming foundation by learning HTML.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+             <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\css.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">CSS</h3>
+            <p class="course-meta">Gourav Pramanik</p>
+            <p class="course-desc">Build a strong programming foundation by learning CSS.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+
+          <li class="course-card">
+            <img src="C:\Users\Abhik Gorai\Desktop\exp\svu\images\r.jpg" alt="React Course" class="course-image">
+            <h3 class="course-title">UI/UX Fundamentals</h3>
+            <p class="course-meta">Aisha Khan • 8 hours • 30 lessons</p>
+            <p class="course-desc">Design beautiful interfaces and learn UX research basics.</p>
+            <button class="btn btn-outline enroll-btn">Enroll</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#">eLearn</a>
+      <p class="muted small">© <span id="year"></span> Abhik Gorai  — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
