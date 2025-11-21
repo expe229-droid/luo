@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - eLearn</title>
-  <link rel="stylesheet" href="styles.css" />
+    <title>Login - eLearn</title>
+    <style>
+        body { font-family: Poppins; background:#064e3b; color:white; display:flex; justify-content:center; align-items:center; height:100vh; }
+        .box { background:white; color:#064e3b; padding:30px; width:320px; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.3); }
+        input { width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #ccc; }
+        button { width:100%; padding:10px; background:#064e3b; color:white; border:none; border-radius:8px; cursor:pointer; }
+        button:hover { background:#0a6b51; }
+        a { color:#064e3b; }
+    </style>
 </head>
+<body>
 
-<body class="auth-body">
-  <div class="auth-container">
+<div class="box">
     <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>Don't have account? <a href="signup.html">Sign Up</a></p>
+</div>
 
-    <form class="auth-form">
-      <label>Email</label>
-      <input type="email" required />
+<script>
+function login() {
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pass").value;
 
-      <label>Password</label>
-      <input type="password" required />
+    let savedEmail = localStorage.getItem("userEmail");
+    let savedPass = localStorage.getItem("userPass");
 
-      <button class="btn btn-primary" type="submit">Login</button>
+    if (email === savedEmail && pass === savedPass) {
+        alert("Login Successful!");
+        window.location.href = "index.html"; // Redirect to home
+    } else {
+        alert("Incorrect email or password!");
+    }
+}
+</script>
 
-      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-    </form>
-  </div>
 </body>
 </html>
